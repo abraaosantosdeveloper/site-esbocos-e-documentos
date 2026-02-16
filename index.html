@@ -25,22 +25,32 @@
     </header>
 
     <div class="content-wrapper">
-
-        <section class="about-section">
-                <div class="call-to-action-wrapper">
-                    <h1>Sobre o acervo</h1>
-                    <p>Aqui você encontra esboços de diversas obras, bem como os livros a estes relacionados. Conhecimento enriquecedor ao alcance de todos, em uma plataforma amigável, completa e intuitiva.</p>
-                    <button class="call-to-action-btn">Explorar coleção</button>
-                </div>
-
-                <div alt="" class="call-to-action-image">
-        </section>
-
-        <section class="mission-section">
-
-        </section>
-
+        <div class="col-center">
+            <div class="search-wrapper">
+                <input type="text" id="search-input" placeholder="Pesquisar" />
+                <button id="search-btn" class="search-btn">
+                    <img src="/src/img/buttons/search.svg" alt="pesquisar">
+                </button>
+            </div>
+            <div id="conteiner-col" class="cards-container"></div>
+            <div class="pagination-controls">
+                <button id="prev-page" class="pagination-btn">
+                    <img src="/src/img/buttons/chevron-left.svg" alt="anterior">
+                </button>
+                <div id="page-numbers" class="page-numbers"></div>
+                <button id="next-page" class="pagination-btn">
+                    <img src="/src/img/buttons/chevron-right.svg" alt="próxima">
+                </button>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Rádio Alento - Todos os direitos reservados</p>
+            <p>Desenvolvido por <strong>Abraão Filipi dos Santos</strong></p>
+        </div>
+    </footer>
 
     <script src="/src/js/index.js"></script>
   </body>
